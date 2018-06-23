@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ts-node index.ts"
+    "test": "ts-node index.ts",
+    "deploy": "ts-node src/deployContract.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "thor-model-kit": "^0.2.0",
-    "thorify": "^0.1.9",
-    "web3": "^1.0.0-beta.34",
     "@types/node": "^10.1.2",
+    "thor-model-kit": "^0.2.0",
+    "thorify": "^0.2.0",
     "ts-node": "^6.0.3",
-    "typescript": "^2.8.3"
+    "typescript": "^2.8.3",
+    "web3": "^1.0.0-beta.34"
   }
 }

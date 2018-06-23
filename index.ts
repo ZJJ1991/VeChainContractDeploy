@@ -8,7 +8,7 @@ const web3 = new Web3();
 thorify(web3, "http://localhost:8669");
 
 
-web3.eth.getBalance(origin.Address).then(function(result : any){
+web3.eth.getBalance(origin.fromAddress).then(function(result : any){
     console.log("balance is: ", result)
 })
 

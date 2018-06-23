@@ -1,6 +1,6 @@
 'use strict';
 
-import { thorify } from "thorify";
+const thorify = require("thorify").thorify;
 const Web3 = require("web3");		// recommand use require() instead of import here
 const web3 = new Web3();
 
