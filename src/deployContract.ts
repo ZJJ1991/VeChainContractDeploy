@@ -5,7 +5,7 @@ import fs = require('fs');
 import path = require('path');
 import { origin } from "../config"
 const ThorifyWeb3 = thorifyWeb3();
-const web3 = ThorifyWeb3.thorifyAdapter("http://localhost:8669")
+const web3 = ThorifyWeb3.thorifyAdaptor("http://localhost:8669")
 import { thorify } from "thorify";
 
 web3.eth.accounts.wallet.add(origin.priKey)
@@ -41,8 +41,15 @@ const deploy = async () => {
 
 }
 
+const getTran = async () => {
+    web3.eth.getTransaction("0xb3ca44a0a0bdda3c29e730ce2f96ed2e8854e23f98cf8bd141c4dacff6b6310b").then(function(result: any)  {
+        console.log("result of get transaction: ", result)
+    })
+}
+
+
 try {
-    deploy();
+    getTran();
 } catch (e) {
     console.log('error:', e)
 }

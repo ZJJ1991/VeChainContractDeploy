@@ -6,7 +6,7 @@ const web3 = new Web3();
 
 
 
-const thorifyAdapter = function(port: string){
+const thorifyAdaptor = function(port: string){
  
     thorify(web3, port);
     return web3
@@ -14,6 +14,6 @@ const thorifyAdapter = function(port: string){
 
 export const thorifyWeb3 = function(){
     return {
-        thorifyAdapter
+        thorifyAdaptor
     };
 }
