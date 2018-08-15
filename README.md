@@ -1,4 +1,4 @@
-# examplethorify
+# Installation
 
 npm install
 
